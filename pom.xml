@@ -7,8 +7,8 @@
 	<version>1</version>
 	<packaging>pom</packaging>
 
-	<name>OpenCms Module Maven Parent</name>
-	<description>Base configuration for OpenCms Module Maven related projects</description>
+	<name>KamomileWare Maven Parent</name>
+	<description>Base configuration for KamomileWare projects</description>
 	<inceptionYear>2009</inceptionYear>
 	<organization>
 		<name>KamomileWare</name>
@@ -24,9 +24,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:svn:http://karmaware.mine.nu/svn/kw/maven-plugins/opencms-module-maven-parent</connection>
-		<developerConnection></developerConnection>
-		<url></url>
+		<connection>scm:svn:http://karmaware.mine.nu/svn/kw/maven-parent/trunk</connection>
+		<developerConnection>scm:svn:http://karmaware.mine.nu/svn/kw/maven-parent/trunk</developerConnection>
+		<url>http://karmaware.mine.nu/svn/kw/maven-parent/trunk</url>
 	</scm>
 
 	<developers>
@@ -42,8 +42,12 @@
 	<distributionManagement>
 		<!-- TODO: move to public server -->
 		<repository>
-			<id>custom-plugins-repo</id>
-			<url>http://karma-server/nexus/content/repositories/plugins/</url>
+			<id>releases-repo</id>
+			<url>http://karma-server/nexus/content/repositories/releases/</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshots-repo</id>
+			<url>http://karma-server/nexus/content/repositories/releases/</url>
+		</snapshotRepository>
 	</distributionManagement>
 </project>
